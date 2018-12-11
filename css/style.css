@@ -1,0 +1,702 @@
+body {
+	background: #000;
+	margin: 0;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.wrapperContent {
+	z-index: 100;
+	position: relative;
+}
+
+.wrapper #menu {
+	z-index: 110;
+}
+
+.blockIndex {
+	z-index: 10;
+}
+
+.headerText,
+.footerText {
+	color: #fff;
+	width: 430px;
+	margin: 77px auto 100px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footerText {
+	margin: 170px auto 45px;
+}
+
+.headerText h1,
+.footerText h1 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.headerText p,
+.footerText p {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.TimelineBackgr {
+	z-index: 1;
+}
+
+.Timeline {
+	border: 2px solid #fff;
+    border-radius: 50%;
+    width: 943px;
+    height: 943px;
+    margin-left: 0px;
+    position: absolute;
+	left: -406px;
+	top: 437px;
+    z-index: 110;
+}
+
+.Timeline .timelineYears {
+	float: right;
+	list-style: none;
+	padding: 128px 0;
+	margin-right: -89px;
+}
+
+.Timeline .timelineYears li {
+	color: #fff;
+	padding: 20px 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.Timeline .timelineYears li:hover {
+	color: #ffd7f1;
+	cursor: pointer;
+}
+
+.bgLine1 {
+	border: 1px solid #a09e9e;
+    border-radius: 50%;
+	position: absolute;
+	left: -598px;
+	top: 245px;
+	width: 1326px;
+	height: 1327px;
+    z-index: 3;
+}
+
+.bgLine2 {
+	border: 1px solid #a09e9e;
+    border-radius: 50%;
+	position: absolute;
+	left: -899px;
+	top: -54px;
+	width: 1927px;
+	height: 1927px;
+    z-index: 3;
+}
+
+.bgLine3 {
+	border: 1px solid #a09e9e;
+    border-radius: 50%;
+    margin-left: 0px;
+    position: absolute;
+	left: -1278px;
+	top: -434px;
+	width: 2686px;
+	height: 2685px;
+    z-index: 3;
+}
+
+.bgLine4 {
+	border: 1px solid #a09e9e;
+    border-radius: 50%;
+    margin-left: 0px;
+    position: absolute;
+	left: -1710px;
+	top: -867px;
+	width: 3549px;
+	height: 3551px;
+    z-index: 3;
+}
+
+.logo {
+	float: left;
+    display: block;
+    padding: 20px 10px;
+}
+
+.toggleMenuButton {
+	background: url("../img/icon_close.png") no-repeat center;
+	display: block;
+	width: 32px;
+	height: 32px;
+	outline: none;
+	border: none;
+	margin: 10px auto 168px;
+	cursor: pointer;
+}
+
+.wrapper .menuClosed {
+	background: transparent;
+}
+
+.wrapper .menuClosed .navList,
+.wrapper .menuClosed .navbarBtn {
+	display: none;
+}
+
+.menuClosed .toggleMenuButton {
+	background: url("../img/icon_menu.png") no-repeat center;
+	margin: 10px auto 0;
+}
+
+.navLogo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-left: 150px;
+}
+
+.navLogo:hover {
+    color: #ffd7f1;
+}
+
+.logoMobile {
+	display: none;
+}
+
+.navList {
+	margin: 0;
+	padding: 0;
+}
+
+.navList li {
+	margin: 0;
+	padding: 22px 0;
+	text-align: center;
+}
+
+.navList li a {
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.navList li a.active {
+	color: #de2bba;
+}
+
+.navbarBtn {
+	width: 155px;
+	background: #000;
+	color: #fff;
+	padding: 22px 32px;
+	text-transform: uppercase;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+	margin: 75px auto 299px;
+    display: block;
+}
+
+.navList li a:hover {
+    color: #de2bba;
+}
+
+.menu {
+	position: absolute;
+    padding: 35px 0;
+	background: #fff;
+	width: 335px;
+	top: 335px;
+	right: 0;
+}
+
+.centerBlock {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+	font-size: 24px;
+	color: #fff;
+	width: 300px;
+    margin: 0 auto;
+	padding-top: 104px;
+	padding-bottom: 150px;
+	padding-left: 320px;
+	z-index: 300;
+}
+
+.centerBlockHeader {
+	font-size: 24px;
+	color: #ffd7f1;
+}
+
+.centerBlockYear {
+	background: url("../img/Rectangle.png") no-repeat left bottom 12px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 240px;
+	font-weight: 700;
+	line-height: 188px;
+    padding-left: 227px;
+	margin-top: 115px;
+	margin-left: -300px;
+}
+
+.centerBlockYear .underlineYear {
+	background: linear-gradient(90deg, #f92caf 26%, #dd2bba 48%, #c12ac6 );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #0B2349;
+	display: inline-block;
+}
+
+.centerBlockDescription {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+	font-size: 16px;
+	width: 360px;
+    margin-left: -63px;
+    margin-top: 65px;
+    color: #ffd7f1;
+}
+
+
+
+
+@media only screen and (max-width : 1815px) {
+	.centerBlockYear {
+		margin-left: -53px;
+	}
+
+	.centerBlockDescription {
+    	margin-left: 183px;
+	}
+}
+
+@media only screen and (max-width : 1366px) {
+	.Timeline {
+		left: -460px;
+		top: 449px;
+		width: 701px;
+		height: 701px;
+	}
+
+	.bgLine1 {
+		left: -666px;
+		top: 314px;
+		width: 1048px;
+		height: 1048px;
+	}
+
+	.bgLine2 {
+		left: -903px;
+		top: 77px;
+		width: 1523px;
+		height: 1522px;
+	}
+
+	.bgLine3 {
+		left: -1203px;
+		top: -224px;
+		width: 2122px;
+		height: 2123px;
+	}
+
+	.bgLine4 {
+		left: -1544px;
+		top: -565px;
+		width: 2804px;
+		height: 2805px;
+	}
+
+	.Timeline .timelineYears {
+	    padding: 70px 0;
+	    margin-right: -94px;
+	}
+
+	.Timeline .timelineYears li {
+    	padding: 16px 0;
+	}
+
+	.headerText {
+   		margin: 60px auto 100px;
+	}
+
+	.toggleMenuButton {
+    	margin: 10px auto 100px;
+	}
+
+	.menu {
+	    padding: 8px 0;
+	}
+
+	.navbarBtn {
+   		margin: 65px auto 240px;
+	}
+	.centerBlock {
+    	padding-top: 90px;
+    	padding-left: 0;
+	}
+
+	.centerBlockYear {
+    	margin-top: 81px;
+    	margin-left: -100px;
+    	font-size: 198px;
+    	padding-left: 173px;
+    	background: url(../img/Rectangle2.png) no-repeat left bottom 27px;
+	}
+
+	.centerBlockDescription {
+		margin-left: 80px;
+		margin-top: 40px;
+	}
+
+	.centerBlockHeader p {
+	    margin-left: -64px;
+	    margin-right: 94px;
+	}
+}
+@media only screen and (max-width : 1122px) {
+	.centerBlockYear {
+		margin-left: -11px;
+	}
+
+	.centerBlockDescription {
+		margin-left: 168px;
+	}
+
+	.centerBlockHeader {
+    	margin-right: -43px;
+    	margin-left: 66px;
+	}
+}
+
+@media only screen and (max-width : 942px) {
+	.centerBlockYear {
+    	margin-top: 94px;
+    	margin-left: 66px;
+    	font-size: 166px;
+    	padding-left: 70px;
+    	background: url(../img/Rectangle1.png) no-repeat left bottom 38px;
+	}
+
+	.centerBlockDescription {
+	    margin-left: 146px;
+	    margin-top: -20px;
+	}
+
+	.centerBlockHeader p {
+    	margin-left: 75px;
+	}
+
+	.centerBlockHeader {
+    	margin-right: -121px;
+    	margin-left: 8px;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.Timeline {
+		left: -682px;
+		top: 477px;
+		width: 796px;
+		height: 796px;
+	}
+
+	.bgLine1 {
+		left: -967px;
+		top: 249px;
+		width: 1277px;
+		height: 1277px;
+	}
+
+	.bgLine2 {
+		left: -1212px;
+		top: -12px;
+		width: 1769px;
+		height: 1769px;
+	}
+
+	.bgLine3 {
+		left: -1514px;
+		top: -313px;
+		width: 2371px;
+		height: 2370px;
+	}
+
+	.menu {
+    	width: 240px;
+	}
+
+	.navLogo {
+	    margin-left: 95px;
+	}
+
+	.Timeline .timelineYears {
+	    padding: 153px 0;
+	    margin-right: -76px;
+	}
+
+	.Timeline .timelineYears li {
+    	font-size: 14px;
+    	padding: 15px 0;
+	}
+
+	.centerBlock {
+    	padding-top: 135px;
+    	margin-right: 260px;
+    }
+
+    .centerBlockYear {
+	    background: url(../img/Rectangle1.png) no-repeat left bottom 7px;
+    	font-size: 120px;
+    	padding-left: 68px;
+    	margin-top: 169px;
+	    line-height: 95px;
+	}
+
+	.centerBlockDescription {
+    	margin-left: 153px;
+    	font-size: 12px;
+    	margin-top: 30px;
+    	width: 285px;
+	}
+}
+
+@media only screen and (max-width : 680px) {
+	.centerBlockHeader {
+		margin-left: 28px;
+		font-size: 19px;
+	}
+
+    .centerBlockYear {
+    	margin-left: 187px;
+    	margin-top: 202px;
+    	font-size: 114px;
+    	background: url(../img/Rectangle1.png) no-repeat left bottom 9px;
+    }
+
+    .centerBlockDescription {
+   		margin-left: 256px;
+	}
+
+	.centerBlockDescriptionP {
+   		width: 216px;
+	}
+}
+
+@media only screen and (max-width : 469px) {
+	.headerText h1,
+	.footerText h1 {
+    	font-size: 19px;
+	}
+
+	.headerText p,
+	.footerText p {
+    	font-size: 12px;
+	}
+
+	.headerText,
+	.footerText {
+    	width: 354px;
+	}
+
+	.navLogo {
+    	margin-left: 37px;
+	}
+
+	.menu {
+		padding: 0;
+	}
+
+	.centerBlockHeader {
+    	font-size: 15px;
+	}
+
+	.centerBlockYear {
+    	font-size: 74px;
+    	background: url(../img/Rectangle1.png) no-repeat left bottom 22px;
+    	margin-top: 287px;
+	}
+
+	.centerBlockDescription {
+		margin-top: 8px;
+		margin-left: 213px;
+	}
+
+	.centerBlockDescriptionP {
+    	width: 156px;
+	}
+
+	.centerBlockYear {
+    	margin-left: 172px;
+    }
+}
+
+@media only screen and (max-width : 375px) {
+	.Timeline {
+		left: -122px;
+		top: 842px;
+		width: 612px;
+		height: 613px;
+	}
+
+	.bgLine1 {
+		left: -185px;
+		top: 752px;
+		width: 737px;
+		height: 739px;
+	}
+
+	.bgLine2 {
+		left: -206px;
+		top: 578px;
+		width: 780px;
+		height: 782px;
+	}
+
+	.bgLine3 {
+		left: -1514px;
+		top: -313px;
+		width: 2371px;
+		height: 2370px;
+	}
+	.headerText,
+	.footerText {
+		width: 315px;
+	}
+
+	.headerText {
+		padding-top: 60px;
+	}
+
+	.headerText h1,
+	.footerText h1 {
+    	font-size: 20px;
+	}
+
+	.headerText p,
+	.footerText p {
+   		font-size: 12px;
+	}
+
+	.menuClosed .toggleMenuButton {
+		margin-top: 30px;
+		margin-right: 40px;
+		float: right;
+	}
+
+	.toggleMenuButton {
+	    margin: 30px auto 100px;
+	    margin-right: 45px;
+	}
+
+	#menu {
+		width: 100%;
+		margin-right: 0;
+		top: 0;
+	}
+	.navbarBtn {
+		background: #d02ac0;
+		color: #000;
+	}
+
+	.logo {
+		padding: 12px 10px;
+	}
+
+	.logoMobile{
+		display: block;
+		margin-top: -30px;
+	}
+
+	.logoDesktop {
+		display: none;
+	}
+
+	.centerBlock {
+	    padding: 0;
+		margin: 0 auto;
+	}
+
+	.centerBlockHeader {
+	    font-size: 20px;
+	    width: 200px;
+	    padding: 0;
+		margin: 0 auto;
+	}
+
+	.centerBlockHeader p {
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.centerBlockYear {
+		margin-left: 15px;
+		line-height: 44px;
+		padding-left: 43px;
+		margin-top: 75px;
+	    margin-left: 60px;
+        background: url(../img/Rectangle3.png) no-repeat left bottom 3px;
+	}
+
+	.centerBlockYear .underlineYear {
+		font-size: 56px;
+	}
+
+	.centerBlockDescription {
+		font-size: 11px;
+		margin-top: 15px;
+		width: 167px;
+	}
+
+	.centerBlockDescription {
+		padding: 0;
+		margin: 15px auto 0;
+	}
+
+	.centerBlockDescriptionP {
+   		width: 165px;
+   		margin: 0 auto;
+   		padding: 0;
+	}
+
+	.Timeline{
+		transform: rotate(-90deg);
+	}
+
+	.Timeline .timelineYears {
+		padding: 50px 0;
+	}
+
+	.footerText {
+		padding-top: 115px;
+		padding-bottom: 110px;
+		margin: 170px 30px 45px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
